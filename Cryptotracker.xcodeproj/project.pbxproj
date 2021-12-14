@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAFE545D2768399000B65E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE545C2768399000B65E32 /* AppDelegate.swift */; };
+		EAFE545F2768399000B65E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE545E2768399000B65E32 /* SceneDelegate.swift */; };
+		EAFE54662768399100B65E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFE54652768399100B65E32 /* Assets.xcassets */; };
+		EAFE54692768399100B65E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE54672768399100B65E32 /* LaunchScreen.storyboard */; };
+		EAFE5472276839CF00B65E32 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EAFE5471276839CF00B65E32 /* Moya */; };
+		EAFE5475276839EB00B65E32 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EAFE5474276839EB00B65E32 /* Kingfisher */; };
+		EAFE547927683A3A00B65E32 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE547827683A3A00B65E32 /* NetworkService.swift */; };
+		EAFE547B27683A6600B65E32 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE547A27683A6600B65E32 /* main.swift */; };
+		EAFE547E27683A8C00B65E32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE547D27683A8C00B65E32 /* Constants.swift */; };
+		EAFE548127683AC400B65E32 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548027683AC400B65E32 /* ViewCode.swift */; };
+		EAFE548327683AE900B65E32 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548227683AE900B65E32 /* UIView+Constraints.swift */; };
+		EAFE548527683AFC00B65E32 /* Formatter+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548427683AFC00B65E32 /* Formatter+Currency.swift */; };
+		EAFE548727683B1100B65E32 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548627683B1100B65E32 /* UIImageView+LoadImage.swift */; };
+		EAFE548927683B2900B65E32 /* LoadCryptoSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = EAFE548827683B2900B65E32 /* LoadCryptoSampleData.json */; };
+		EAFE548B27683B5300B65E32 /* LoadIconsSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = EAFE548A27683B5300B65E32 /* LoadIconsSampleData.json */; };
+		EAFE548D27683B5E00B65E32 /* String+SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548C27683B5E00B65E32 /* String+SampleData.swift */; };
+		EAFE549027683B8700B65E32 /* CryptoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE548F27683B8700B65E32 /* CryptoListTableViewController.swift */; };
+		EAFE549227683B8E00B65E32 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549127683B8E00B65E32 /* CryptoTableViewCell.swift */; };
+		EAFE549427683B9500B65E32 /* CryptoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549327683B9500B65E32 /* CryptoCellModel.swift */; };
+		EAFE549627683B9C00B65E32 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549527683B9C00B65E32 /* Models.swift */; };
+		EAFE549827683BA200B65E32 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549727683BA200B65E32 /* CryptoListViewModel.swift */; };
+		EAFE549A27683BA900B65E32 /* CryptoTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549927683BA900B65E32 /* CryptoTarget.swift */; };
+		EAFE549C27683BB100B65E32 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE549B27683BB100B65E32 /* CryptoRepository.swift */; };
+		EAFE54C52768415B00B65E32 /* CryptotrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54C42768415B00B65E32 /* CryptotrackerUITests.swift */; };
+		EAFE54C72768415B00B65E32 /* CryptotrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54C62768415B00B65E32 /* CryptotrackerUITestsLaunchTests.swift */; };
+		EAFE54CD2768417500B65E32 /* CryptoCellModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54A4276840CB00B65E32 /* CryptoCellModelTests.swift */; };
+		EAFE54CE2768417500B65E32 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54A6276840CB00B65E32 /* TestAppDelegate.swift */; };
+		EAFE54CF2768417500B65E32 /* CryptoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54A5276840CB00B65E32 /* CryptoTrackerTests.swift */; };
+		EAFE54D02768417500B65E32 /* TestSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54A7276840CB00B65E32 /* TestSceneDelegate.swift */; };
+		EAFE54D12768417500B65E32 /* CryptoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54A3276840CB00B65E32 /* CryptoViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFE54B92768414F00B65E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFE54512768399000B65E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFE54582768399000B65E32;
+			remoteInfo = Cryptotracker;
+		};
+		EAFE54C82768415B00B65E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFE54512768399000B65E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFE54582768399000B65E32;
+			remoteInfo = Cryptotracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAFE54592768399000B65E32 /* Cryptotracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptotracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE545C2768399000B65E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAFE545E2768399000B65E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAFE54652768399100B65E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFE54682768399100B65E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAFE546A2768399100B65E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFE547827683A3A00B65E32 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EAFE547A27683A6600B65E32 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EAFE547D27683A8C00B65E32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EAFE548027683AC400B65E32 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		EAFE548227683AE900B65E32 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		EAFE548427683AFC00B65E32 /* Formatter+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Currency.swift"; sourceTree = "<group>"; };
+		EAFE548627683B1100B65E32 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		EAFE548827683B2900B65E32 /* LoadCryptoSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadCryptoSampleData.json; sourceTree = "<group>"; };
+		EAFE548A27683B5300B65E32 /* LoadIconsSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadIconsSampleData.json; sourceTree = "<group>"; };
+		EAFE548C27683B5E00B65E32 /* String+SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SampleData.swift"; sourceTree = "<group>"; };
+		EAFE548F27683B8700B65E32 /* CryptoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListTableViewController.swift; sourceTree = "<group>"; };
+		EAFE549127683B8E00B65E32 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		EAFE549327683B9500B65E32 /* CryptoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCellModel.swift; sourceTree = "<group>"; };
+		EAFE549527683B9C00B65E32 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EAFE549727683BA200B65E32 /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		EAFE549927683BA900B65E32 /* CryptoTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTarget.swift; sourceTree = "<group>"; };
+		EAFE549B27683BB100B65E32 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		EAFE54A3276840CB00B65E32 /* CryptoViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoViewModelTests.swift; sourceTree = "<group>"; };
+		EAFE54A4276840CB00B65E32 /* CryptoCellModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCellModelTests.swift; sourceTree = "<group>"; };
+		EAFE54A5276840CB00B65E32 /* CryptoTrackerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CryptoTrackerTests.swift; path = ../Cryptotracker/CryptoTrackerTests/CryptoTrackerTests.swift; sourceTree = "<group>"; };
+		EAFE54A6276840CB00B65E32 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		EAFE54A7276840CB00B65E32 /* TestSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSceneDelegate.swift; sourceTree = "<group>"; };
+		EAFE54B52768414F00B65E32 /* CryptotrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptotrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE54C22768415B00B65E32 /* CryptotrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptotrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFE54C42768415B00B65E32 /* CryptotrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptotrackerUITests.swift; sourceTree = "<group>"; };
+		EAFE54C62768415B00B65E32 /* CryptotrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptotrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFE54562768399000B65E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE5475276839EB00B65E32 /* Kingfisher in Frameworks */,
+				EAFE5472276839CF00B65E32 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54B22768414F00B65E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54BF2768415B00B65E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAFE54502768399000B65E32 = {
+			isa = PBXGroup;
+			children = (
+				EAFE545B2768399000B65E32 /* Cryptotracker */,
+				EAFE54B62768414F00B65E32 /* CryptotrackerTests */,
+				EAFE54C32768415B00B65E32 /* CryptotrackerUITests */,
+				EAFE545A2768399000B65E32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFE545A2768399000B65E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE54592768399000B65E32 /* Cryptotracker.app */,
+				EAFE54B52768414F00B65E32 /* CryptotrackerTests.xctest */,
+				EAFE54C22768415B00B65E32 /* CryptotrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFE545B2768399000B65E32 /* Cryptotracker */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE547727683A2C00B65E32 /* Network */,
+				EAFE547C27683A7B00B65E32 /* Constants */,
+				EAFE547F27683AAF00B65E32 /* Utils */,
+				EAFE547627683A2100B65E32 /* AppDelegate */,
+				EAFE548E27683B7500B65E32 /* Scene */,
+				EAFE54652768399100B65E32 /* Assets.xcassets */,
+				EAFE54672768399100B65E32 /* LaunchScreen.storyboard */,
+				EAFE546A2768399100B65E32 /* Info.plist */,
+			);
+			path = Cryptotracker;
+			sourceTree = "<group>";
+		};
+		EAFE547627683A2100B65E32 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE545C2768399000B65E32 /* AppDelegate.swift */,
+				EAFE545E2768399000B65E32 /* SceneDelegate.swift */,
+				EAFE547A27683A6600B65E32 /* main.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EAFE547727683A2C00B65E32 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE547827683A3A00B65E32 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EAFE547C27683A7B00B65E32 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE547D27683A8C00B65E32 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EAFE547F27683AAF00B65E32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE548027683AC400B65E32 /* ViewCode.swift */,
+				EAFE548227683AE900B65E32 /* UIView+Constraints.swift */,
+				EAFE548427683AFC00B65E32 /* Formatter+Currency.swift */,
+				EAFE548627683B1100B65E32 /* UIImageView+LoadImage.swift */,
+				EAFE548827683B2900B65E32 /* LoadCryptoSampleData.json */,
+				EAFE548A27683B5300B65E32 /* LoadIconsSampleData.json */,
+				EAFE548C27683B5E00B65E32 /* String+SampleData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAFE548E27683B7500B65E32 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE548F27683B8700B65E32 /* CryptoListTableViewController.swift */,
+				EAFE549127683B8E00B65E32 /* CryptoTableViewCell.swift */,
+				EAFE549327683B9500B65E32 /* CryptoCellModel.swift */,
+				EAFE549527683B9C00B65E32 /* Models.swift */,
+				EAFE549727683BA200B65E32 /* CryptoListViewModel.swift */,
+				EAFE549927683BA900B65E32 /* CryptoTarget.swift */,
+				EAFE549B27683BB100B65E32 /* CryptoRepository.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EAFE54B62768414F00B65E32 /* CryptotrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE54A4276840CB00B65E32 /* CryptoCellModelTests.swift */,
+				EAFE54A5276840CB00B65E32 /* CryptoTrackerTests.swift */,
+				EAFE54A3276840CB00B65E32 /* CryptoViewModelTests.swift */,
+				EAFE54A6276840CB00B65E32 /* TestAppDelegate.swift */,
+				EAFE54A7276840CB00B65E32 /* TestSceneDelegate.swift */,
+			);
+			path = CryptotrackerTests;
+			sourceTree = "<group>";
+		};
+		EAFE54C32768415B00B65E32 /* CryptotrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE54C42768415B00B65E32 /* CryptotrackerUITests.swift */,
+				EAFE54C62768415B00B65E32 /* CryptotrackerUITestsLaunchTests.swift */,
+			);
+			path = CryptotrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFE54582768399000B65E32 /* Cryptotracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFE546D2768399100B65E32 /* Build configuration list for PBXNativeTarget "Cryptotracker" */;
+			buildPhases = (
+				EAFE54552768399000B65E32 /* Sources */,
+				EAFE54562768399000B65E32 /* Frameworks */,
+				EAFE54572768399000B65E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptotracker;
+			packageProductDependencies = (
+				EAFE5471276839CF00B65E32 /* Moya */,
+				EAFE5474276839EB00B65E32 /* Kingfisher */,
+			);
+			productName = Cryptotracker;
+			productReference = EAFE54592768399000B65E32 /* Cryptotracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFE54B42768414F00B65E32 /* CryptotrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFE54BB2768414F00B65E32 /* Build configuration list for PBXNativeTarget "CryptotrackerTests" */;
+			buildPhases = (
+				EAFE54B12768414F00B65E32 /* Sources */,
+				EAFE54B22768414F00B65E32 /* Frameworks */,
+				EAFE54B32768414F00B65E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFE54BA2768414F00B65E32 /* PBXTargetDependency */,
+			);
+			name = CryptotrackerTests;
+			productName = CryptotrackerTests;
+			productReference = EAFE54B52768414F00B65E32 /* CryptotrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAFE54C12768415B00B65E32 /* CryptotrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFE54CA2768415B00B65E32 /* Build configuration list for PBXNativeTarget "CryptotrackerUITests" */;
+			buildPhases = (
+				EAFE54BE2768415B00B65E32 /* Sources */,
+				EAFE54BF2768415B00B65E32 /* Frameworks */,
+				EAFE54C02768415B00B65E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFE54C92768415B00B65E32 /* PBXTargetDependency */,
+			);
+			name = CryptotrackerUITests;
+			productName = CryptotrackerUITests;
+			productReference = EAFE54C22768415B00B65E32 /* CryptotrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFE54512768399000B65E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EAFE54582768399000B65E32 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					EAFE54B42768414F00B65E32 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EAFE54582768399000B65E32;
+					};
+					EAFE54C12768415B00B65E32 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EAFE54582768399000B65E32;
+					};
+				};
+			};
+			buildConfigurationList = EAFE54542768399000B65E32 /* Build configuration list for PBXProject "Cryptotracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFE54502768399000B65E32;
+			packageReferences = (
+				EAFE5470276839CF00B65E32 /* XCRemoteSwiftPackageReference "Moya" */,
+				EAFE5473276839EB00B65E32 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = EAFE545A2768399000B65E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFE54582768399000B65E32 /* Cryptotracker */,
+				EAFE54B42768414F00B65E32 /* CryptotrackerTests */,
+				EAFE54C12768415B00B65E32 /* CryptotrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFE54572768399000B65E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE548B27683B5300B65E32 /* LoadIconsSampleData.json in Resources */,
+				EAFE54692768399100B65E32 /* LaunchScreen.storyboard in Resources */,
+				EAFE548927683B2900B65E32 /* LoadCryptoSampleData.json in Resources */,
+				EAFE54662768399100B65E32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54B32768414F00B65E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54C02768415B00B65E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFE54552768399000B65E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE548D27683B5E00B65E32 /* String+SampleData.swift in Sources */,
+				EAFE547B27683A6600B65E32 /* main.swift in Sources */,
+				EAFE545D2768399000B65E32 /* AppDelegate.swift in Sources */,
+				EAFE549227683B8E00B65E32 /* CryptoTableViewCell.swift in Sources */,
+				EAFE547927683A3A00B65E32 /* NetworkService.swift in Sources */,
+				EAFE549C27683BB100B65E32 /* CryptoRepository.swift in Sources */,
+				EAFE549427683B9500B65E32 /* CryptoCellModel.swift in Sources */,
+				EAFE548127683AC400B65E32 /* ViewCode.swift in Sources */,
+				EAFE549027683B8700B65E32 /* CryptoListTableViewController.swift in Sources */,
+				EAFE549627683B9C00B65E32 /* Models.swift in Sources */,
+				EAFE545F2768399000B65E32 /* SceneDelegate.swift in Sources */,
+				EAFE547E27683A8C00B65E32 /* Constants.swift in Sources */,
+				EAFE548527683AFC00B65E32 /* Formatter+Currency.swift in Sources */,
+				EAFE549A27683BA900B65E32 /* CryptoTarget.swift in Sources */,
+				EAFE549827683BA200B65E32 /* CryptoListViewModel.swift in Sources */,
+				EAFE548727683B1100B65E32 /* UIImageView+LoadImage.swift in Sources */,
+				EAFE548327683AE900B65E32 /* UIView+Constraints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54B12768414F00B65E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE54CD2768417500B65E32 /* CryptoCellModelTests.swift in Sources */,
+				EAFE54D12768417500B65E32 /* CryptoViewModelTests.swift in Sources */,
+				EAFE54CE2768417500B65E32 /* TestAppDelegate.swift in Sources */,
+				EAFE54CF2768417500B65E32 /* CryptoTrackerTests.swift in Sources */,
+				EAFE54D02768417500B65E32 /* TestSceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFE54BE2768415B00B65E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFE54C72768415B00B65E32 /* CryptotrackerUITestsLaunchTests.swift in Sources */,
+				EAFE54C52768415B00B65E32 /* CryptotrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFE54BA2768414F00B65E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFE54582768399000B65E32 /* Cryptotracker */;
+			targetProxy = EAFE54B92768414F00B65E32 /* PBXContainerItemProxy */;
+		};
+		EAFE54C92768415B00B65E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFE54582768399000B65E32 /* Cryptotracker */;
+			targetProxy = EAFE54C82768415B00B65E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFE54672768399100B65E32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFE54682768399100B65E32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFE546B2768399100B65E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAFE546C2768399100B65E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFE546E2768399100B65E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cryptotracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.Cryptotracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFE546F2768399100B65E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cryptotracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.Cryptotracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAFE54BC2768414F00B65E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.CryptotrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cryptotracker.app/Cryptotracker";
+			};
+			name = Debug;
+		};
+		EAFE54BD2768414F00B65E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.CryptotrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cryptotracker.app/Cryptotracker";
+			};
+			name = Release;
+		};
+		EAFE54CB2768415B00B65E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.CryptotrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cryptotracker;
+			};
+			name = Debug;
+		};
+		EAFE54CC2768415B00B65E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T64SWW8VZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.CryptotrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cryptotracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFE54542768399000B65E32 /* Build configuration list for PBXProject "Cryptotracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE546B2768399100B65E32 /* Debug */,
+				EAFE546C2768399100B65E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFE546D2768399100B65E32 /* Build configuration list for PBXNativeTarget "Cryptotracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE546E2768399100B65E32 /* Debug */,
+				EAFE546F2768399100B65E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFE54BB2768414F00B65E32 /* Build configuration list for PBXNativeTarget "CryptotrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE54BC2768414F00B65E32 /* Debug */,
+				EAFE54BD2768414F00B65E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFE54CA2768415B00B65E32 /* Build configuration list for PBXNativeTarget "CryptotrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFE54CB2768415B00B65E32 /* Debug */,
+				EAFE54CC2768415B00B65E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAFE5470276839CF00B65E32 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EAFE5473276839EB00B65E32 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAFE5471276839CF00B65E32 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAFE5470276839CF00B65E32 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		EAFE5474276839EB00B65E32 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAFE5473276839EB00B65E32 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EAFE54512768399000B65E32 /* Project object */;
+}
