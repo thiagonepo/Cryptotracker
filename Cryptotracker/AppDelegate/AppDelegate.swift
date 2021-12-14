@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CryptoTracker
 //
-//  Created by Thiago Nepomuceno Silva on 04/11/21.
+//  Created by Gael on 14/12/21.
 //
 
 import UIKit

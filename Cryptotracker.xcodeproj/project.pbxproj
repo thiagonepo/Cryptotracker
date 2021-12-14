@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAFE545D2768399000B65E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE545C2768399000B65E32 /* AppDelegate.swift */; };
-		EAFE545F2768399000B65E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE545E2768399000B65E32 /* SceneDelegate.swift */; };
+		EAAD2AEB276845D40054AEF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAD2AEA276845D40054AEF6 /* AppDelegate.swift */; };
+		EAAD2AF12768461B0054AEF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAD2AF02768461B0054AEF6 /* SceneDelegate.swift */; };
 		EAFE54662768399100B65E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFE54652768399100B65E32 /* Assets.xcassets */; };
 		EAFE54692768399100B65E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFE54672768399100B65E32 /* LaunchScreen.storyboard */; };
 		EAFE5472276839CF00B65E32 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EAFE5471276839CF00B65E32 /* Moya */; };
@@ -57,9 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EAAD2AEA276845D40054AEF6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAAD2AF02768461B0054AEF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EAFE54592768399000B65E32 /* Cryptotracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptotracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFE545C2768399000B65E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFE545E2768399000B65E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EAFE54652768399100B65E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFE54682768399100B65E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFE546A2768399100B65E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 		EAFE547627683A2100B65E32 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE545C2768399000B65E32 /* AppDelegate.swift */,
-				EAFE545E2768399000B65E32 /* SceneDelegate.swift */,
+				EAAD2AEA276845D40054AEF6 /* AppDelegate.swift */,
 				EAFE547A27683A6600B65E32 /* main.swift */,
+				EAAD2AF02768461B0054AEF6 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -370,15 +370,15 @@
 			files = (
 				EAFE548D27683B5E00B65E32 /* String+SampleData.swift in Sources */,
 				EAFE547B27683A6600B65E32 /* main.swift in Sources */,
-				EAFE545D2768399000B65E32 /* AppDelegate.swift in Sources */,
 				EAFE549227683B8E00B65E32 /* CryptoTableViewCell.swift in Sources */,
 				EAFE547927683A3A00B65E32 /* NetworkService.swift in Sources */,
 				EAFE549C27683BB100B65E32 /* CryptoRepository.swift in Sources */,
 				EAFE549427683B9500B65E32 /* CryptoCellModel.swift in Sources */,
 				EAFE548127683AC400B65E32 /* ViewCode.swift in Sources */,
+				EAAD2AF12768461B0054AEF6 /* SceneDelegate.swift in Sources */,
+				EAAD2AEB276845D40054AEF6 /* AppDelegate.swift in Sources */,
 				EAFE549027683B8700B65E32 /* CryptoListTableViewController.swift in Sources */,
 				EAFE549627683B9C00B65E32 /* Models.swift in Sources */,
-				EAFE545F2768399000B65E32 /* SceneDelegate.swift in Sources */,
 				EAFE547E27683A8C00B65E32 /* Constants.swift in Sources */,
 				EAFE548527683AFC00B65E32 /* Formatter+Currency.swift in Sources */,
 				EAFE549A27683BA900B65E32 /* CryptoTarget.swift in Sources */,

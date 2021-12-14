@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Cryptotracker
+@testable import CryptoTracker
 
 class CryptoTrackerTests: XCTestCase {
 
